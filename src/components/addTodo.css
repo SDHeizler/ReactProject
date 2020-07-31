@@ -1,0 +1,56 @@
+@media screen and (min-width: 400px) {
+  #inputCont {
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  #inputCont input {
+    height: 30px;
+    width: 160px;
+  }
+  #inputCont button {
+    height: 30px;
+  }
+  #inputCont input,
+  #inputCont button {
+    border-radius: 5px;
+    border: 1px solid black;
+    transition: ease-in-out 0.25s;
+  }
+  #addTodoButton {
+    background: black;
+    color: white;
+    font-family: lato, sans-serif;
+    transition: var(--transition);
+    margin-left: 5px;
+  }
+  #addTodoButton:hover {
+    background: rgb(68, 68, 68);
+    cursor: pointer;
+  }
+  #addTodo {
+    background-color: rgba(255, 255, 255, 0.562);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #inputCont {
+    height: auto;
+  }
+  #inputCont input {
+    height: 50px;
+    width: 200px;
+  }
+  #inputCont button {
+    height: 50px;
+    width: 75px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #inputCont input {
+    width: 230px;
+  }
+  #inputCont button {
+    width: 85px;
+  }
+}

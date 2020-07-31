@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --accent: #ea928da6;
+  --accentHover: #c57a76;
+  --dark: #304659;
+  --dark80: rgba(48, 70, 89, 0.8);
+  --dark60: rgba(48, 70, 89, 0.6);
+  --light: #f5f9fc;
+  --transition: all 0.3s ease 0s;
+  --transitionUnderLine: all 0.3s ease-in-out 0s;
+}
+* {
+  overflow: auto;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  background: linear-gradient(var(--dark60), var(--dark60)),
+    url("./images/xps-DYAf-8UTFN8-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+header {
+  background: transparent;
+  margin-top: 0;
+  font-family: lato, sans-serif;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+h1 {
+  background-color: transparent;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+#TodosIcon {
+  height: 90px;
+}
+#GithubIcon,
+#ProfileIcon {
+  height: 50px;
+}
+#Links {
+  background-color: transparent;
+}
+.LinkCont,
+a,
+img,
+.ProjectCont {
+  background-color: transparent;
+}
+@media screen and (min-width: 400px) {
+  header {
+    margin-top: 5px;
+  }
+  h1 {
+    transition: var(--transition);
+  }
+  #GithubIcon,
+  #ProfileIcon {
+    height: 30px;
+    transition: var(--transition);
+  }
+  #GithubLink,
+  #ProfileLink {
+    color: white;
+    font-family: lato, sans-serif;
+    text-decoration: none;
+    transition: var(--transition);
+    font-size: 20px;
+    background-color: var(--accent);
+    border-radius: 8px;
+  }
+  #GithubLink:hover,
+  #ProfileLink:hover,
+  #TodosLink:hover {
+    background-color: var(--accentHover);
+    color: black;
+    cursor: pointer;
+  }
+  #ProfileLink,
+  #GithubLink {
+    margin-right: 10px;
+    transition: var(--transition);
+  }
+  .ProjectCont {
+    display: flex;
+    justify-content: center;
+    margin-top: 10em;
+    height: 100px;
+    align-items: center;
+  }
+  #TodosLink {
+    height: auto;
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+    background-color: var(--accent);
+    border-radius: 8px;
+    font-family: lato, sans-serif;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (min-width: 700px) {
+  h1 {
+    margin-left: 10px;
   }
-  to {
-    transform: rotate(360deg);
+  #GithubIcon,
+  #ProfileIcon {
+    height: 40px;
   }
+  #ProfileLink,
+  #GithubLink {
+    margin-right: 15px;
+    font-size: 25px;
+  }
+  #TodosLink {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
 }

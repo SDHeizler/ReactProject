@@ -1,0 +1,141 @@
+#TodosMain {
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(173, 172, 172, 0.479),
+      rgba(173, 172, 172, 0.479)
+    ),
+    url(../images/TodosBackground.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 400px) {
+  #todosHeader {
+    height: auto;
+  }
+  #todosLink {
+    color: white;
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: var(--transition);
+    background-color: var(--accent);
+    border-radius: 8px;
+  }
+  #todosHomeCont img {
+    height: 30px;
+    transition: var(--transition);
+  }
+  #todosLink:hover {
+    background-color: var(--accentHover);
+    color: black;
+  }
+  ol {
+    margin-top: 30px;
+    height: auto;
+    width: auto;
+    transition: var(--transition);
+  }
+  #todoCont {
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid black;
+    transition: var(--transition);
+    background: rgba(245, 243, 243, 0.671);
+  }
+  #todoCont li {
+    margin-left: 10px;
+    font-weight: 600;
+  }
+  #todoCont button {
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  #buttonCont .Delete {
+    background-image: url(../images/remove.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    transition: var(--transition);
+  }
+  #buttonCont .Delete:hover {
+    cursor: pointer;
+    background: linear-gradient(rgba(114, 2, 2, 0.205), rgba(114, 2, 2, 0.205)),
+      url(../images/remove.png);
+    background-size: cover;
+  }
+  #buttonCont .completed {
+    background-image: url(../images/checkmark.png);
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    transition: var(--transition);
+  }
+  #buttonCont .completed:hover {
+    cursor: pointer;
+    background: linear-gradient(rgba(3, 110, 3, 0.171), rgba(3, 110, 3, 0.171)),
+      url(../images/checkmark.png);
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  ol {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #todoCont {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #todoCont li {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  #buttonCont .Delete,
+  #buttonCont .completed {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #todosHomeCont img {
+    height: 40px;
+  }
+  #todosLink {
+    font-size: 25px;
+  }
+  ol {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #todosHomeCont img {
+    height: 45px;
+  }
+  #todosLink {
+    font-size: 30px;
+  }
+  ol {
+    width: 58%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  ol {
+    width: 40%;
+  }
+}
