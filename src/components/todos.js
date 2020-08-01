@@ -4,6 +4,7 @@ import AddTodo from "./addTodo";
 import uuid from "react-uuid";
 import axios from "axios";
 import "./todos.css";
+import PropTypes from "prop-types";
 
 // Todos is a class component with todos, addTodo, and Completed in state. Uses jsonplaceholder as the back-end to make GET, POST, and Delete requests with.
 class Todos extends React.Component {
@@ -198,5 +199,9 @@ class Todos extends React.Component {
     );
   }
 }
-
+Todos.propTypes = {
+  getStyle: PropTypes.func,
+  delTodo: PropTypes.func,
+  Completed: PropTypes.func,
+};
 export default Todos;
