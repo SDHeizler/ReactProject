@@ -157,7 +157,7 @@ class Todos extends React.Component {
           <h1 id="todosTitle">Todos App</h1>
           <div id="todosHomeCont">
             <img src={require("../images/home.png")} alt="Home"></img>
-            <Link id="todosLink" to="/">
+            <Link id="todosLink" to="/ReactProject">
               Home
             </Link>
           </div>
