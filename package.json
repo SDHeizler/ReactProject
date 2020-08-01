@@ -2,6 +2,7 @@
   "name": "reactproject",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://sdheizler.github.io/ReactProject/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-regular-svg-icons": "^5.14.0",
@@ -14,8 +15,7 @@
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-uuid": "^1.0.2",
-    "homepage": "https://sdheizler.github.io/ReactProject/"
+    "react-uuid": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
